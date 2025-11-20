@@ -4,7 +4,8 @@ const Dashboard = () => {
   const [records, setRecords] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/history")
+    fetch("http://host.docker.internal:5000/history")
+
       .then((res) => res.json())
       .then((data) => setRecords(data))
       .catch((err) => console.error("Error fetching history:", err));

@@ -1,7 +1,18 @@
+# Node modules (already there)
 node_modules/
 
-__pycache__/
+# React build output (add this)
+frontend/build/
 
+# Python cache (already partially there, improve)
+__pycache__/
+*.pyc
+
+# Local env files (already there)
 .env
 
+# SQLite DBs (already there)
 *.sqlite3
+
+# Specific DB file (extra safety)
+backend/predictions.db
