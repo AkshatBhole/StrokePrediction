@@ -18,9 +18,6 @@ CORS(app)
 
 model = load("stroke_prediction_model.joblib")
 
-with app.app_context():
-    db.create_all()
-    print("Database tables created successfully!")
     
 @app.route('/')
 def home():
