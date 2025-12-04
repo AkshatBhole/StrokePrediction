@@ -16,7 +16,7 @@ export default function Login() {
     e.preventDefault();
     setError("");
     try {
-      const res = await fetch("http://host.docker.internal:5000/login", {
+      const res = await fetch("https://strokeprediction-backend2.onrender.com/login", {
 
         method: "POST",
         headers: { "Content-Type": "application/json" },

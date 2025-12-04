@@ -5,7 +5,7 @@ export default function History() {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
-    fetch("http://host.docker.internal:5000/history")
+    fetch("https://strokeprediction-backend2.onrender.com/history")
 
       .then((res) => res.json())
       .then((data) => setHistory(data.reverse()))
