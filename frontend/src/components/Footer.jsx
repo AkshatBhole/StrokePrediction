@@ -55,17 +55,22 @@ export default function Footer() {
             </li>
           </ul>
           <div className="flex space-x-4 mt-3 text-lg">
-            <a href="#" className="hover:text-blue-400">
-              <FaGithub />
-            </a>
-            <a href="#" className="hover:text-blue-400">
-              <FaLinkedin />
-            </a>
             <a
-              href="mailto:support@strokesense.ai"
+              href="https://github.com/AkshatBhole"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-blue-400"
             >
-              <FaEnvelope />
+              <FaGithub />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/akshat-bhole" // put your actual LinkedIn URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400"
+            >
+              <FaLinkedin />
             </a>
           </div>
         </div>
